@@ -6,7 +6,7 @@ Organization: UNIR
 import os
 import sys
 
-DEFAULT_FILENAME = "words.txt"
+DEFAULT_FILENAME = "palabras.txt"
 DEFAULT_DUPLICATES = False
 
 def sort_list(items, ascending=True):
@@ -14,10 +14,8 @@ def sort_list(items, ascending=True):
         raise RuntimeError(f"No puede ordenar {type(items)}")
     return sorted(items, reverse=(not ascending))
 
-
 def remove_duplicates_from_list(items):
     return list(set(items))
-
 
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
